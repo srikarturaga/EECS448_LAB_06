@@ -1,0 +1,49 @@
+div.profilepic
+{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 250px;
+}
+
+body
+{
+    background-image: url(jayhawk.png);
+    background-size: 5px;
+    background-repeat: repeat;
+}
+
+h1
+{
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.header
+{
+    background-color: white;
+    text-align: center;
+}
+div.header:hover
+{
+    background-color: yellow;
+    color: red;
+}
+
+p
+{
+    background-color: white;
+    background-size: auto;
+}
+p:hover
+{
+    background-color: blue;
+    color: yellow;
+}
+
+div.links
+{
+    background-color: white;
+}

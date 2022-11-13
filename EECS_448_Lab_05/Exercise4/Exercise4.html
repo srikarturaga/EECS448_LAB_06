@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 4</title>
+        <style>
+             body   
+            {  
+                height: 125vh;  
+                margin-top: 80px;  
+                padding: 30px;  
+                background-size: cover;  
+                font-family: sans-serif;  
+            }  
+            header {  
+                background-color: orange;  
+                position: fixed;  
+                left: 0;  
+                right: 0;  
+                top: 5px;  
+                height: 30px;  
+                display: flex;  
+                align-items: center;  
+                box-shadow: 0 0 25px 0 black;  
+            }  
+            header * {  
+                display: inline;  
+            }     
+            header li {  
+                margin: 20px;  
+            }  
+            header li a {  
+                color: blue;  
+                text-decoration: none;  
+            }     
+            ul.red {
+                list-style: none;
+            }
+  
+            ul.red li.red::before {
+                content: "\2022";
+                color: red;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+            }
+            ul.green {
+                list-style: none;
+            }
+  
+            ul.green li.green::before {
+                content: "\2022";
+                color: green;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+            }
+
+            ul.blue {
+                list-style: none;
+            }
+  
+            ul.blue li.blue::before {
+                content: "\2022";
+                color: blue;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+            }
+        </style>
+        <script src="Exercise4.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../Lab5.html">Lab 5 Home</a></li>
+                    <li><a href="../Exercise1/Exercise1.html">Exercise 1</a></li>
+                    <li><a href="../Exercise2/Exercise2.html">Exercise 2</a></li>
+                    <li><a href="../Exercise3/Exercise3.html">Exercise 3</a></li>
+                    <li><a href="">Exercise 4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p id="manipulation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+        <br>
+        <p><b>BORDER OPTIONS</b></p>
+        <ul class="red">
+            <li class="red"><a href="" title="#FF0000">Red</a></li>
+        </ul>
+        <ul class="green">
+            <li class="green"><a href="" title="#00FF20">Green</a></li>
+        </ul>
+        <ul class="blue">
+            <li class="blue"><a href="" title="#0000FF">Blue</a></li>
+        </ul>
+        
+        <input type="text" id="border">
+        <br>
+        <br>
+        <a href="" title="px"><p><b>WIDTH</b></p></a>
+        <input type="text" id="width">
+        <p><b>BACKGROUND COLOR OPTIONS</b></p>
+        <ul class="red">
+            <li class="red"><a href="" title="#FF0000">Red</a></li>
+        </ul>
+        <ul class="green">
+            <li class="green"><a href="" title="#00FF20">Green</a></li>
+        </ul>
+        <ul class="blue">
+            <li class="blue"><a href="" title="#0000FF">Blue</a></li>
+        </ul>
+        <input type="text" id="background">
+        <br>
+        <br>
+        <button onclick="onSubmit()">APPLY</button>
+    </body>
+</html>

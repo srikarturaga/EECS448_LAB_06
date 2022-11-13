@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="formChecker.js"></script>
+        <style type=text/css>
+            body   
+            {  
+                height: 125vh;  
+                margin-top: 80px;  
+                padding: 30px;   
+                font-family: sans-serif;  
+            }  
+            header {  
+                background-color: orange;  
+                position: fixed;  
+                left: 0;  
+                right: 0;  
+                top: 5px;  
+                height: 30px;  
+                display: flex;  
+                align-items: center;  
+                box-shadow: 0 0 25px 0 black;  
+            }  
+            header * {  
+                display: inline;  
+            }     
+            header li {  
+                margin: 20px;  
+            }  
+            header li a {  
+                color: blue;  
+                text-decoration: none;  
+            }     
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../Lab6.html">Lab 6 Home</a></li>
+                    <li><a href="../Exercise1/Exercise1.php">Exercise 1</a></li>
+                    <li><a href="../Exercise2/Quiz.html">Exercise 2</a></li>
+                    <li><a href="">Exercise 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Welcome to the Krusty Krab</h1>
+        <form action="customerBackend.php" method="post">
+            
+            <div class="information">
+                <h3>Enter Personal Information</h3>
+                
+                <input type="email" id="email" name="username" placeholder="Username" required><br><br>
+                <input id="password" type="password" name="password" placeholder="Password" required><br>
+            </div>
+            
+            <div class="gallerygrub">
+                <h3>Gallery Grub</h3>
+                
+                <ul>
+                    <li value="1.25">Krabby Patty ~ $1.00</li>
+                    <li value="1.50">Kelp Rings ~ $2.00</li>
+                    <li value="2.00">Kelp Shake ~ $3.00</li>
+                </ul>
+
+                <label for="item-1"># of Krabby Patties: </label>
+                <input type="number" id="item-1" name="item-1" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required><br><br>
+
+                <label for="item-2"># of Kelp Rings: </label>
+                <input type="number" id="item-2" name="item-2"  min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required><br><br>
+
+                <label for="item-3"># of Kelp Shakes: </label>
+                <input type="number" id="item-3" name="item-3"  min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required><br>
+
+            </div>
+
+            <div class="shipping">
+                <h3>Shipping</h3>
+
+                <input type="radio" name="shipping" id="free" value="0" />
+                <label for="food-1">7 Day ~ Free (Don't Tell Mr. Krabs!!!)</label>
+                <br>
+
+                <input type="radio" name="shipping" id="overnight" value="50" />
+                <label for="food-2">Over Night ~ $50.00</label>
+                <br>
+
+                <input type="radio" name="shipping" id="threeday" value="5" />
+                <label for="food-3">Three Day ~ $5.00</label>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <br>
+                <input type="button" id="reset" onclick="_reset()" value="Reset"><br>
+            </div>
+
+            <div>
+                <br>
+                <button type="submit" id="submit" onclick="onSubmit()">Submit
+            </div>
+            
+        </form>
+    </body>
+</html>

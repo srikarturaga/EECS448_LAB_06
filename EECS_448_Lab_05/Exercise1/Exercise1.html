@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 1</title>
+	<script type="text/javascript" src="Exercise1.js"></script>
+	<style type=text/css>
+		body   
+		{  
+			height: 125vh;  
+			margin-top: 80px;  
+			padding: 30px;  
+			background-size: cover;  
+			font-family: sans-serif;  
+		}  
+		header {  
+			background-color: orange;  
+			position: fixed;  
+			left: 0;  
+			right: 0;  
+			top: 5px;  
+			height: 30px;  
+			display: flex;  
+			align-items: center;  
+			box-shadow: 0 0 25px 0 black;  
+		}  
+		header * {  
+			display: inline;  
+		}     
+		header li {  
+			margin: 20px;  
+		}  
+		header li a {  
+			color: blue;  
+			text-decoration: none;  
+		}     
+
+	</style>
+</head>
+<body>
+	<header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+				<li><a href="../Lab5.html">Lab 5 Home</a></li>
+				<li><a href="">Exercise 1</a></li>
+                <li><a href="../Exercise2/Exercise2.html">Exercise 2</a></li>
+                <li><a href="../Exercise3/Exercise3.html">Exercise 3</a></li>
+                <li><a href="../Exercise4/Exercise4.html">Exercise 4</a></li>
+            </ul>
+        </nav>
+    </header>
+	<label>Enter Password:</label>
+	<input type="password" id="password1" onkeydown="javascript: var keycode = keyPressed(event); if(keycode == 32){return false;}"><br><br>
+	<label>Re-Enter Password: </label>
+	<input type="password" id="password2" onkeydown="javascript: var keycode = keyPressed(event); if(keycode == 32){return false;}"><br><br>
+	<button onclick="validate()">Validate</button>
+</body>
+</html>

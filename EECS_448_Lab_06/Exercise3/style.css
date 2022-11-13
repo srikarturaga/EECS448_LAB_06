@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    color: red;
+    background-color: plum;
+}
+
+h3 
+{
+    color: red;
+}
+
+body {
+    background-image: url("Squidward_Bangs_Head_On_Cash_Register.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.checkout {
+
+    background-image: url("One_Millionth_Dollar_Clams.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.gallerygrub, div.shipping {
+    background-color: beige;
+    width: fit-content;
+}
+
+div.information {
+    background-color: beige;
+    width: fit-content;
+}
+
+div.receipt {
+    background-color: beige;
+    width: fit-content;
+}
+
+p {
+    color: red;
+}
