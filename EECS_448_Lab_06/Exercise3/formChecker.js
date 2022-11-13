@@ -3,6 +3,11 @@ function _reset()
     window.location.reload(true);
 }
 
+window.onkeypress = function check(event)
+{
+    return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))
+}
+
 function onSubmit()
 {
     var item1 = document.getElementById('item-1').value;
